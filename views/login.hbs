@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kural Login</title>
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <form action="" method="post" class="container col-md-4">
+        <div class="form-row">
+            <div class="heading">Login to Kural</div>
+        </div>
+        <div class="form-group">
+            <label for="userid">Identification Number</label>
+            <input type="number" id="userid" name="userid" class="form-control" placeholder="Identification Number">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+        </div>
+
+        {{#if error}}
+
+        <div class="form-group alert alert-danger" id="errorMsg">
+            UserID or Password cannot be empty
+        </div>
+
+        {{/if}}
+
+        <div class="form-row center">
+            <button type="submit" class="btn btn-primary col-md-2" onclick="return validate();">Submit</button>
+        </div>
+    </form>
+
+    <!--jQuery JS-->
+    <script src="/jquery/jquery.min.js"></script>
+
+    <!--Custom JS-->
+    <script src= "/js/validate.js"></script>
+</body>
+</html>

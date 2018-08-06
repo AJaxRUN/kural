@@ -1,0 +1,28 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+body {
+    background: url("../img/3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.container {
+    margin-top: 22vh;
+    padding: 15px 40px 20px 40px;
+    background: rgba(245, 245, 245, 0.4);
+    border-radius: 6%;
+}
+.heading {
+    font-size: 1.4em;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.center {
+    justify-content: center;
+}
+button {
+    margin-right: 1vw;
+}
